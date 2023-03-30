@@ -1,4 +1,5 @@
 import { List } from "immutable";
+import { malePersons } from "./currying";
 
 type Sum = (arr: List<number>) => number;
 
@@ -21,13 +22,14 @@ const sum: Sum = (arr) => {
 };
 
 export const main = () => {
-  const memoSum = memo(sum);
-  let arr = List([2, 3, 4]);
-  const res = memoSum(arr);
-  console.log(res);
-  arr = arr.push(6);
-  const res2 = memoSum(arr);
-  console.log(res2);
+  // const memoSum = memo(sum);
+  // let arr = List([2, 3, 4]);
+  // const res = memoSum(arr);
+  // console.log(res);
+  // arr = arr.push(6);
+  // const res2 = memoSum(arr);
+  // console.log(res2);
+  console.log(malePersons);
 };
 
 main();
