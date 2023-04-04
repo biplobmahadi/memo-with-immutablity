@@ -1,6 +1,7 @@
 import { List } from "immutable";
 import { malePersons } from "./currying";
 import { countNumber } from "./recursion";
+import './functors'
 
 type Sum = (arr: List<number>) => number;
 
@@ -30,7 +31,7 @@ export const main = () => {
   // arr = arr.push(6);
   // const res2 = memoSum(arr);
   // console.log(res2);
-  countNumber(10);
+  // countNumber(10);
   //  makeTree()
   // console.log(res);
 };
